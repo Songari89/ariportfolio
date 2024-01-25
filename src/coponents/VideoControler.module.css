@@ -1,6 +1,17 @@
-.container {
-  width: 30%;
+.controler {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.container > img {
+.icon {
+  width: 13px;
+  opacity: 0.7;
+
 }
+
+@media(max-width:600px){
+  .icon{
+    width: 10px;
+  }
+}
+
