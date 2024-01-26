@@ -9,6 +9,10 @@
 
 }
 
+.icon:hover{
+  opacity:1;
+}
+
 @media(max-width:600px){
   .icon{
     width: 10px;

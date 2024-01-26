@@ -28,7 +28,7 @@ span {
 
 @media (min-width: 1024px) {
   .container {
-    height: 75vh;
+    height: 100vh;
   }
   .line1,
   .name {
