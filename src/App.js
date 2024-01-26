@@ -1,14 +1,20 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import Header from "./coponents/Header";
+import VideoPlayer from "./coponents/VideoPlayer";
+import VideoProvider from "./contexts/VideoProvider";
 
 
 function App() {
+
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    <VideoProvider>
+      <div className="app">
+        <VideoPlayer />
+        <Header />
+        <Outlet />
+      </div>
+    </VideoProvider>
   );
 }
 
