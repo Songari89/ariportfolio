@@ -1,0 +1,27 @@
+{
+  "aboutme": {
+    "Profile": {
+      "contents": [
+        "이름 : 송가람",
+        "생년월일 : 1989.07.19",
+        "이메일 : ari89.web@gmail.com",
+        "깃허브 : https://github.com/Songari89"
+      ]
+    },
+
+    "Certificate": {
+      "contents": ["웹 디자인 기능사", "GTQ 1급", "GTQi 1급"]
+    },
+    "Experiences": {
+      "contents": [
+        "2012 한림대학교 경제학과, 컨벤션학과 졸업",
+        "2013 - 2014 스타벅스코리아 근무",
+        "2015 캐나다 워킹홀리데이",
+        "2016 - 2023 스타벅스 코리아 근무"
+      ]
+    },
+    "Skill": {
+      "contents": ["HTML / CSS / Javascript", "React", "Figma"]
+    }
+  }
+}

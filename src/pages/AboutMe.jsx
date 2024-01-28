@@ -1,24 +1,55 @@
 import React, { useState } from "react";
 import styles from "./AboutMe.module.css";
 import ExpandCircle from "../coponents/ExpandCircle";
+import leef from "../image/leef3.gif";
+import Profile from "../coponents/Profile";
 
 export default function AboutMe() {
   const [showAboutMe, setShowAboutMe] = useState(false);
-  const handleMouseOver = () => {
-    setShowAboutMe(true);
+  const [expand, setExpand] = useState(false);
+
+  const handleMouseEnter = () => {
+    setExpand(true);
+
+    setTimeout(() => {
+      setShowAboutMe(true);
+      setExpand(false);
+    }, 1000);
   };
   const handleMouseOut = () => {
     setShowAboutMe(false);
   };
-
   return (
     <section className={styles.container}>
-      {!showAboutMe && <ExpandCircle onMouseOver={handleMouseOver} />}
+      {!showAboutMe && <ExpandCircle />}
+      <div className={styles.expandcontainer}>
+        <div
+          className={`${styles.expandcircle} ${expand ? styles.expand : ""}`}
+          onMouseEnter={handleMouseEnter}
+        ></div>
+      </div>
       <div
-        className={`${styles.aboutme} ${showAboutMe ? styles.show : ""}`}
+        className={`${styles.aboutmecontainer} ${
+          showAboutMe ? styles.show : ""
+        }`}
         onMouseOut={handleMouseOut}
       >
-  
+        {/* <div
+        className={`${styles.aboutmecontainer} ${
+          styles.show 
+        }`}
+        onMouseOut={handleMouseOut}
+      > */}
+        <div className={styles.aboutme}>
+          <img src={leef} alt="leef" />
+          <p>About Me</p>
+        </div>
+        <div className={styles.contents}>
+          <Profile title="Profile" />
+          <Profile title="Certificate" />
+          <Profile title="Experiences" />
+          <Profile title="Skill" />
+        </div>
       </div>
     </section>
   );
