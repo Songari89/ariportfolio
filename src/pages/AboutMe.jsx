@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AboutMe.module.css";
 import ExpandCircle from "../coponents/ExpandCircle";
-import leef from "../image/leef3.gif";
+import leef from "../image/leef(G).gif";
 import Profile from "../coponents/Profile";
 
 export default function AboutMe() {
@@ -45,10 +45,10 @@ export default function AboutMe() {
           <p>About Me</p>
         </div>
         <div className={styles.contents}>
-          <Profile title="Profile" />
-          <Profile title="Certificate" />
-          <Profile title="Experiences" />
-          <Profile title="Skill" />
+          <Profile title="Profile"  />
+          <Profile title="Certificate"  />
+          <Profile title="Experiences"  />
+          <Profile title="Skill"  />
         </div>
       </div>
     </section>

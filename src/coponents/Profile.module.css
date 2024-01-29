@@ -5,6 +5,7 @@
   border-radius: 0.5rem;
   padding: 1rem 1rem 2rem 1rem;
   box-shadow:0.5px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+
 }
 
 .title{
@@ -20,7 +21,10 @@
   font-size: 0.9rem;
   margin:1rem 0 0 1rem;
   color: var(--fontColor);
+
 }
+
+
 
 @media(max-width: 768px){
   .title{
@@ -34,5 +38,11 @@
   }
   .list{
     margin: 0.5rem 0 0 1rem;
+  }
+}
+
+@media(min-width: 1024px){
+  .container{
+      padding: 2rem 1rem 1rem 2rem;
   }
 }

@@ -53,6 +53,7 @@
 }
 
 .aboutme {
+    pointer-events: none;
   position: relative;
 }
 
@@ -79,6 +80,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem 1rem;
+    pointer-events: none;
 }
 
 
@@ -106,5 +108,10 @@
 @media (min-width: 1440px){
   .aboutmecontainer {
     width: 70vw;
+  }
+    .contents{
+      padding: 0 3rem;
+      gap: 3rem;
+      
   }
 }
