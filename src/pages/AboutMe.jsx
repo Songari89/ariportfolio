@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AboutMe.module.css";
 import ExpandCircle from "../coponents/ExpandCircle";
-import leef from "../image/leef(G).gif";
+import leef from "../staticimage/leef(G).gif";
 import Profile from "../coponents/Profile";
 
 export default function AboutMe() {

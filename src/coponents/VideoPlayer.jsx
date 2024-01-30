@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import bgvideo from "../image/river.mp4";
+import bgvideo from "../staticimage/river.mp4";
 import styles from "./VideoPlayer.module.css";
 import { useVideo } from "../contexts/VideoProvider";
 

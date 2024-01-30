@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import pauseicon from "../image/icons/pause.svg";
-import playicon from "../image/icons/play.svg";
+import pauseicon from "../staticimage/icons/pause.svg";
+import playicon from "../staticimage/icons/play.svg";
 import styles from "./VideoControler.module.css";
 import { useVideo } from "../contexts/VideoProvider";
 
