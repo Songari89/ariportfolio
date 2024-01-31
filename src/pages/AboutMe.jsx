@@ -3,10 +3,12 @@ import styles from "./AboutMe.module.css";
 import ExpandCircle from "../coponents/ExpandCircle";
 import leef from "../staticimage/leef(G).gif";
 import Profile from "../coponents/Profile";
+import { useScroll } from "../contexts/ScrollProvider";
 
 export default function AboutMe() {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [expand, setExpand] = useState(false);
+  const {ref} = useScroll();
 
   const handleMouseEnter = () => {
     setExpand(true);
@@ -29,10 +31,11 @@ export default function AboutMe() {
         ></div>
       </div>
       <div
-        className={`${styles.aboutmecontainer} ${
+        className={`mainele ${styles.aboutmecontainer} ${
           showAboutMe ? styles.show : ""
         }`}
         onMouseOut={handleMouseOut}
+  
       >
         {/* <div
         className={`${styles.aboutmecontainer} ${

@@ -18,8 +18,6 @@ export default function WorkList() {
       {works &&
         works.map((work, index) => (
           <li key={index}>
-            {console.log(work.image)}
-
             <img className={styles.image} src={work.image} alt={work.title} />
             <div className={styles.content}></div>
           </li>

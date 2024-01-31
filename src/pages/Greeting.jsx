@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Greeting.module.css";
+import { useScroll } from "../contexts/ScrollProvider";
 
 export default function Greeting() {
+  const {ref} = useScroll();
   return (
     <section className={styles.container}>
-      <div className={styles.contents}>
+      <div className={`mainele ${styles.contents}`}  >
       <p className={styles.line1}>안녕하세요.</p>
       <p className={styles.line2}>
         흐르는 강물처럼 멈추지 않고 앞으로 나아가는
