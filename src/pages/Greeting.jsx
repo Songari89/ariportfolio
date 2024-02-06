@@ -3,17 +3,19 @@ import styles from "./Greeting.module.css";
 import { useScroll } from "../contexts/ScrollProvider";
 
 export default function Greeting() {
-  const {ref} = useScroll();
+
+
   return (
     <section className={styles.container}>
-      <div className={`mainele ${styles.contents}`}  >
-      <p className={styles.line1}>안녕하세요.</p>
-      <p className={styles.line2}>
-        흐르는 강물처럼 멈추지 않고 앞으로 나아가는
-      </p>
-      <p className={styles.line2}>
-        웹 디자이너, <span className={styles.name}>송가람입니다.</span>
-      </p></div>
+      <div className={styles.contents} >
+        <p className={styles.line1}>안녕하세요.</p>
+        <p className={styles.line2}>
+          흐르는 강물처럼 멈추지 않고 앞으로 나아가는
+        </p>
+        <p className={styles.line2}>
+          웹 디자이너, <span className={styles.name}>송가람입니다.</span>
+        </p>
+      </div>
     </section>
   );
 }

@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-intersection-observer", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:9.5.3"],\
             ["react-router-dom", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:6.21.3"],\
             ["react-scripts", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:5.0.1"],\
+            ["react-scroll", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:1.9.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -5911,6 +5912,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-intersection-observer", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:9.5.3"],\
             ["react-router-dom", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:6.21.3"],\
             ["react-scripts", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:5.0.1"],\
+            ["react-scroll", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:1.9.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -12008,6 +12010,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.throttle", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-129c0a28ce.zip/node_modules/lodash.throttle/",\
+          "packageDependencies": [\
+            ["lodash.throttle", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.uniq", [\
         ["npm:4.5.0", {\
           "packageLocation": "./.yarn/cache/lodash.uniq-npm-4.5.0-7c270dca85-a4779b57a8.zip/node_modules/lodash.uniq/",\
@@ -15362,6 +15373,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "eslint",\
             "react",\
             "typescript"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-scroll", [\
+        ["npm:1.9.0", {\
+          "packageLocation": "./.yarn/cache/react-scroll-npm-1.9.0-b612dd2ab5-b84427d090.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "npm:1.9.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:1.9.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-scroll-virtual-766fccacfe/0/cache/react-scroll-npm-1.9.0-b612dd2ab5-b84427d090.zip/node_modules/react-scroll/",\
+          "packageDependencies": [\
+            ["react-scroll", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:1.9.0"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["lodash.throttle", "npm:4.1.1"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:107ca3d5e0272453f6559cf238c81ebd9d6230ce511b0ccc6a076945158bf272eba6497d30dcde032bafcae55ec63d6e4a56104b8f12e7918ccae78b0071250a#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

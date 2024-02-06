@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import './util/Constants.css'
+import "./util/Constants.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Notfound from "./pages/Notfound";
 import Main from "./pages/Main";
 import Portfolio from "./pages/Portfolio";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainScrollWrap from "./coponents/MainScrollWrap";
 
 const router = createBrowserRouter([
   {

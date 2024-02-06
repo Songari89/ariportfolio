@@ -6,9 +6,10 @@ import Profile from "../coponents/Profile";
 import { useScroll } from "../contexts/ScrollProvider";
 
 export default function AboutMe() {
+  // const {aboutmeRef} = useScroll();
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [expand, setExpand] = useState(false);
-  const {ref} = useScroll();
+
 
   const handleMouseEnter = () => {
     setExpand(true);
@@ -22,7 +23,7 @@ export default function AboutMe() {
     setShowAboutMe(false);
   };
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="aboutme">
       {!showAboutMe && <ExpandCircle />}
       <div className={styles.expandcontainer}>
         <div
@@ -31,11 +32,11 @@ export default function AboutMe() {
         ></div>
       </div>
       <div
-        className={`mainele ${styles.aboutmecontainer} ${
+        className={`${styles.aboutmecontainer} ${
           showAboutMe ? styles.show : ""
         }`}
         onMouseOut={handleMouseOut}
-  
+       
       >
         {/* <div
         className={`${styles.aboutmecontainer} ${
@@ -48,10 +49,10 @@ export default function AboutMe() {
           <p>About Me</p>
         </div>
         <div className={styles.contents}>
-          <Profile title="Profile"  />
-          <Profile title="Certificate"  />
-          <Profile title="Experiences"  />
-          <Profile title="Skill"  />
+          <Profile title="Profile" />
+          <Profile title="Certificate" />
+          <Profile title="Experiences" />
+          <Profile title="Skill" />
         </div>
       </div>
     </section>

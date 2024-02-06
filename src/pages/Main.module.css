@@ -1,7 +1,14 @@
 .container{
   width:85vw;
+  height: 100%;
   margin: 0 auto;
     padding: 1rem;
+}
+
+.rootref{
+  width:100%;
+  height:40px;
+  background-color: #ddd;
 }
 
 @media (min-width: 1440px){
