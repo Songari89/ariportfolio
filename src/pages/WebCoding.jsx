@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./WebCoding.module.css";
 import leef from "../staticimage/leef(W).gif";
 import WorkList from "../coponents/WorkList";
-import { useScroll } from "../contexts/ScrollProvider";
+
 
 export default function WebCoding() {
 

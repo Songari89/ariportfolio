@@ -40,7 +40,6 @@ export default function Header() {
             activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={viewportHeight > 1000 ? -100 : -70}
             duration={500}
           >
             WEB CODING

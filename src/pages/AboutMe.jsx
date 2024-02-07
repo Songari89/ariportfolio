@@ -10,7 +10,6 @@ export default function AboutMe() {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [expand, setExpand] = useState(false);
 
-
   const handleMouseEnter = () => {
     setExpand(true);
 
@@ -20,7 +19,9 @@ export default function AboutMe() {
     }, 1000);
   };
   const handleMouseOut = () => {
-    setShowAboutMe(false);
+    setTimeout(() => {
+      setShowAboutMe(false);
+    }, 500);
   };
   return (
     <section className={styles.container} id="aboutme">
@@ -36,7 +37,6 @@ export default function AboutMe() {
           showAboutMe ? styles.show : ""
         }`}
         onMouseOut={handleMouseOut}
-       
       >
         {/* <div
         className={`${styles.aboutmecontainer} ${

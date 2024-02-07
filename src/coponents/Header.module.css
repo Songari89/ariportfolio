@@ -17,9 +17,10 @@
 } */
 
 .container.inview{
-    background-color: rgba(0, 66, 22, 0.7);
-    background-color: rgba(255, 255, 255, 0.5);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 99%);
+    background-color: rgba(24,79,42, 1);
+    background-color: rgba(0,66,22, 1);
+    /* background-color: rgba(22, 74, 39, 1); */
+    mask-image: linear-gradient(to bottom, black 5%, rgba(0,0,0, 0.9) 40%, rgba(0,0,0, 0.7) 65% ,rgba(0,0,0, 0.5) 75%, transparent 95% )
 }
 
 /* .inview:after{
@@ -94,7 +95,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .container {
     padding: 0;
   }
