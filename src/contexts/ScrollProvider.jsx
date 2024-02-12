@@ -12,11 +12,13 @@ const ScrollContext = createContext();
 export default function ScrollProvider({ children }) {
   const viewportHeight = window.innerHeight;
   const threshold = viewportHeight < 670 ? 0.28 : viewportHeight > 1200 ? 0.32 : 0.31;  
+
   const {ref, inView, entry} = useInView({
     root:null,
     threshold: threshold
   });
-  console.log(entry)
+
+
 
   return (
     <ScrollContext.Provider value={{ inView, ref, viewportHeight }}>

@@ -4,23 +4,16 @@ import Greeting from "./Greeting";
 import AboutMe from "./AboutMe";
 import WebCoding from "./WebCoding";
 
-import { useScroll } from "../contexts/ScrollProvider";
-
-
 
 export default function Main() {
-   const { ref } =useScroll();
+
   return (
+    <div className={styles.container}  id="main">
+      <Greeting />
 
-      <div className={styles.container} ref={ref} id="main">
-       
-          <Greeting />
-      
-          <AboutMe />
-      
-          <WebCoding />
-   
-      </div>
+      <AboutMe />
 
+      <WebCoding />
+    </div>
   );
 }

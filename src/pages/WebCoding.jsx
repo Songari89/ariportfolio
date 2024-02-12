@@ -8,7 +8,7 @@ export default function WebCoding() {
 
   return (
     <section className={styles.container} id="webcoding">
-      <div className={styles.webcodingimage}  >
+      <div className={styles.webcodingimage}>
         <img src={leef} alt="leef" />
         <p>WEB CODING</p>
       </div>

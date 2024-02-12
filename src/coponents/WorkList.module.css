@@ -5,9 +5,15 @@
 
 .list{
   margin: 2rem 0;
+  padding: 1rem;
   display: flex;
   justify-content:space-between;
   align-items:center;
+  background-color: rgba(0,0,0, 0.4);
+  border-radius:0.6rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
 }
 
 .image{
@@ -18,4 +24,40 @@
 
 .image:hover{
   transform: scale(1.5);
+}
+
+.contents{
+  width: 60%;
+  padding-left: 1rem;
+  color: #ffffff;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contents>p{
+  margin-bottom: 0.3rem;
+}
+
+
+
+.btn{
+  padding: 0.4rem;
+  border-radius: 1.5rem;
+  border:2px solid #ffffff;
+  background-color: #ffffff;
+  color: var(--fontColor);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height:1;
+  cursor:pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ffffff;
 }

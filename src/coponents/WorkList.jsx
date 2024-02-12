@@ -19,13 +19,13 @@ export default function WorkList() {
         works.map((work, index) => (
           <li key={index} className={styles.list}>
             <img className={styles.image} src={work.image} alt={work.title} />
-            <div className={styles.content}>
-              <p>{work.title}</p>
+            <div className={styles.contents}>
+              <p className={styles.title}>{work.title}</p>
               <p>{work.type}</p>
               <p>{work.tool}</p>
               <p>{work.part}</p>
             </div>
-            <button>상세 페이지</button>
+            <button className={styles.btn}>자세히 보기</button>
           </li>
         ))}
     </ul>
