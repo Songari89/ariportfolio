@@ -9,14 +9,19 @@ export default function Portfolio() {
   const {title} = location.state;
   const navigate = useNavigate();
   return (
-    <section className={styles.container}>
-      <div className={styles.homeiconcontainer} onClick={() => {
-        navigate('/')
-      }}>
+    <section className={styles.section}>
+      <div className={styles.container}>
+      <div
+        className={styles.homeiconcontainer}
+        onClick={() => {
+          navigate("/");
+        }}
+      >
         <img src={homeicon} className={styles.homeicon} alt="home" />
         <p>홈으로</p>
       </div>
       <p className={styles.title}>{title}</p>
+      </div>
     </section>
   );
 }
