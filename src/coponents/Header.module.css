@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 4;
+  transition: backdrop-filter 200ms ease-in-out, border-bottom 200ms ease-in-out;
 }
 
 /* .container:after{
@@ -17,8 +18,9 @@
 
 .container.inview{
   border-bottom: 2px solid #ffffff;
-    background-color: rgba(0,66,22, 1);
-    mask-image: linear-gradient(to bottom, black 5%, rgba(0,0,0, 0.9) 40%, rgba(0,0,0, 0.7) 65% ,rgba(0,0,0, 0.5) 98%, black 99%)
+    /* background-color: rgba(0,66,22, 1);
+    mask-image: linear-gradient(to bottom, black 5%, rgba(0,0,0, 0.9) 40%, rgba(0,0,0, 0.7) 65% ,rgba(0,0,0, 0.5) 98%, black 99%) */
+  backdrop-filter: blur(3px);
 }
 
 
@@ -47,8 +49,9 @@
 .link{
   margin: 0 0.7rem;
   font-size: 1.1rem;
-    color: #ffffff;
-      cursor:pointer;
+  font-weight: 500;
+  color: #ffffff;
+  cursor:pointer;
 }
 
 .greet {
@@ -56,9 +59,12 @@
   padding: 0;
 }
 
+.link:hover{
+  color: var(--subColor);
+}
+
 .link.active{
   color: var(--subColor);
-  font-weight: 600;
 }
 
 @media (min-width: 1440px) {

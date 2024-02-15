@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./WorkList.module.css";
 import { useQuery } from "@tanstack/react-query";
+import {useNavigate} from 'react-router-dom';
+
 
 export default function WorkList() {
   const {
@@ -13,6 +15,7 @@ export default function WorkList() {
       return fetch("/data/webcoding.json").then((res) => res.json());
     },
   });
+  const navigate = useNavigate();
   return (
     <ul className={styles.lists}>
       {works &&
@@ -25,7 +28,10 @@ export default function WorkList() {
               <p>{work.tool}</p>
               <p>{work.part}</p>
             </div>
-            <button className={styles.btn}>자세히 보기</button>
+            <button className={styles.btn} onClick={() => {
+              const title = work.title;
+              navigate(`/${title}`, {state:work})
+            }}>자세히 보기</button>
           </li>
         ))}
     </ul>
