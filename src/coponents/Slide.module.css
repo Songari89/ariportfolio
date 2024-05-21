@@ -1,0 +1,37 @@
+.container{
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.imagecontainer{
+  width:100%;
+  height:100%;
+  display: flex;
+}
+
+.image{
+  width:100%;
+  height:100%;
+  object-fit:fill;
+}
+
+.prebtn{
+  width:15px;
+  position: absolute;
+  top:50%;
+  left:0.5rem;
+  transform:translateY(-50%);
+  cursor:pointer;
+  z-index: 1;
+}
+
+.nextbtn{
+    width:15px;
+  position: absolute;
+  top:50%;
+  right:0.5rem;
+  transform:translateY(-50%);
+  cursor:pointer;
+}

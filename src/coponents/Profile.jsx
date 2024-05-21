@@ -4,8 +4,6 @@ import styles from './Profile.module.css';
 
 export default function Profile({ title}) {
   const {
-    isLoading,
-    error,
     data: profiles,
   } = useQuery({
     queryKey: ["aboutme", title],

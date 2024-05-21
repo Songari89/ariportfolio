@@ -8,6 +8,7 @@
 
 }
 
+
 .title{
   width: 1.1rem;
   font-size: 1.1rem;
@@ -17,7 +18,7 @@
 }
 
 .list {
-  font-family:'Noto Sans KR', sans-serif;
+  font-family:var(--subFont);
   font-size: 0.9rem;
   margin:1rem 0 0 1rem;
   color: var(--fontColor);

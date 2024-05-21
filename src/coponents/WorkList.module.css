@@ -30,7 +30,7 @@
   width: 55%;
   padding-left: 1rem;
   color: #ffffff;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--subFont);
 }
 
 .contents > .title{
