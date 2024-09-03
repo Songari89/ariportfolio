@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Link} from "react-scroll";
+import { useNavigate} from 'react-router-dom'
 import styles from "./Header.module.css";
 import VideoControler from "./VideoControler";
 import Mail from "./Mail";
 import useHeader from "../hooks/useHeader";
-
+import imgup from '../staticimage/icons/imgupload.svg';
 
 export default function Header() {
   const {isVisible} = useHeader();
-
+  const navigate = useNavigate();
   const [active, setActive] = useState(false);
   const handleSetActive = () => {
     setActive(true);
@@ -72,6 +73,7 @@ export default function Header() {
                 WEB CODING
               </Link>
             </nav>
+              <img src={imgup} className={styles.imgupicon} alt="imgup" onClick={() => {navigate("/imageworkupload")}}/>
             <div className={styles.iconcontainer}>
               <VideoControler />
               <Mail />

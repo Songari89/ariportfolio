@@ -1,5 +1,11 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, get } from "firebase/database";
+import { getDatabase, ref as dbRef, set, get } from "firebase/database";
+import {
+  getStorage,
+  ref as storageRef,
+  uploadBytes,
+  getDownloadURL,
+} from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -15,3 +21,32 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const database = getDatabase(app);
+const storage = getStorage(app);
+
+
+export async function uploadImage({file, id, category}){
+  const imageRef = storageRef(storage, `images/${category}/${id}`)
+  return uploadBytes(imageRef, file).then((snapshot) => 
+    getDownloadURL(snapshot.ref)).then((downloadURL) => {
+      return downloadURL;
+    })
+}
+
+export async function addImageWork({ list, preViewImageURL,imageURL, id }) {
+  return set(dbRef(database, `images/${id}`), {
+    ...list,
+    id,
+    image: imageURL,
+    previewimage : preViewImageURL,
+    description: list.description.split(",")
+  });
+}
+
+export async function getImageWork(){
+  return get(dbRef(database, 'images')).then((snapshot) => {
+    if(snapshot.exists()) {
+      return Object.values(snapshot.val())
+    }
+    return [];
+  })
+}

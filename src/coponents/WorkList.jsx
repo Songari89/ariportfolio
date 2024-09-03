@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./WorkList.module.css";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
+import ImageWork from "./ImageWork";
 
 export default function WorkList() {
   const {
@@ -38,6 +39,7 @@ export default function WorkList() {
             </button>
           </li>
         ))}
+      <li className={`${styles.list} ${styles.imagework}`}><ImageWork/></li>
     </ul>
   );
 }

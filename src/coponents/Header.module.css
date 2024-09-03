@@ -46,6 +46,15 @@
 
 
 
+.imgupicon{
+  width: 15px;
+    opacity:0;
+  cursor:default;
+}
+
+.imgupicon:hover{
+  opacity:1;
+}
 .link{
   margin: 0 0.7rem;
   font-size: 1.1rem;

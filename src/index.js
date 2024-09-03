@@ -9,6 +9,8 @@ import Main from "./pages/Main";
 import Portfolio from "./pages/Portfolio";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainScrollWrap from "./coponents/MainScrollWrap";
+import ImageWorkDetail from "./pages/ImageWorkDetail";
+import ImageWorkUpload from "./pages/ImageWorkUpload";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,9 @@ const router = createBrowserRouter([
     errorElement: <Notfound />,
     children: [
       { path: "/", index: true, element: <Main /> },
+      { path: "/imageworkupload", element:<ImageWorkUpload/>},
       { path: "/portfolio/:title", element: <Portfolio /> },
+      { path: "/portfolio/imagework", element: <ImageWorkDetail/>}
     ],
   },
 ]);
