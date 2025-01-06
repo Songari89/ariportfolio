@@ -7,7 +7,6 @@ export default function ModalProvider({children}) {
   const [image, setImage] = useState(null);
 
   const openModal = (image) => {
-    console.log("clicked", image)
     setIsOpen(true)
     setImage(image)
   }
